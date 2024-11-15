@@ -1,0 +1,45 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Button Click</title>
+</head>
+<body>
+  <button id="myButton">Click me</button>
+  <p id="message"></p>
+
+  <script>
+    const button = document.getElementById('myButton');
+    const message = document.getElementById('message');
+
+    button.addEventListener('click', () => {
+      message.textContent = 'Button clicked!';
+    });
+  </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Free Trial</title>
+</head>
+<body>
+  <button id="trialButton">Start Your Free Trial</button>
+
+  <script>
+    const trialButton = document.getElementById('trialButton');
+
+    trialButton.addEventListener('click', () => {
+      // Here, you can add your desired action, such as:
+      // - Redirecting to a signup page:
+      window.location.href = 'https://your-signup-page-url';
+      // - Displaying a modal or popup:
+      //   // Assuming you have a modal with an ID of 'myModal'
+      const modal = document.getElementById('myModal');
+      modal.style.display = 'block';
+      // - Triggering a Google Analytics event:
+      //   // Assuming you have Google Analytics set up
+      gtag('event', 'free_trial_clicked');
+    });
+  </script>
+</body>
+</html>
